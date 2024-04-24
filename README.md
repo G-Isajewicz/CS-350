@@ -16,7 +16,7 @@ comments, and modifying appropriately. For example, if a temperature range limit
 the set point and adapting it to include an IF statement check such that if the user pressed the button to increase the temperature:
 
     
-if(setPoint >= maxSetPoint) {
-    setPoint == minSetPoint;
-}
+    if(setPoint >= maxSetPoint) {
+      setPoint == minSetPoint;
+    }
       
