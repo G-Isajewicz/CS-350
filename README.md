@@ -10,7 +10,7 @@ Accomplishing this requried the use of I2C, GPIO, and UART peripherals, as well 
 
     In order to ensure that the project is maintainble, readable, and adaptable, I made a deliberate effort to follow best practices in the structure and naming conventions of my code, as well as the inclusion of comments where necessary. With these standards upheld, and thorough commenting of the functionality of each section, the code should be easily understood by anyone who would be tasked with maintaining or modifying it in the future. A level of adaptability is inherent in this code by the nature of its structure. The program uses peripherals to engage with a board, and their implementation is well-commented in the code itself. Adding additional functionality, or adapting the code to provide additional functionality should be as simple as identifying that area of the code either from the code itself, or from the comments, and modifying appropriately. For example, if a temperature range limit is desired for the set point, a simple solution could be found by locating the method of handling the button input that adjusts the set point and adapting it to include an IF statement check such that if the user pressed the button to increas the temperature: 
     
-    if(setPoint >= maxSetPoint) {
-      setPoint == minSetPoint;
-      }
+if(setPoint >= maxSetPoint) {
+    setPoint == minSetPoint;
+}
       
